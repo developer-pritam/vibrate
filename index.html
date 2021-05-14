@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrate - Developer Pritam</title>
+</head>
+<body>
+<H1> Pritam Kumar</H1>
+    <button class="button"  onclick="vibrate(1000)">Vibrate Only 1 time</button> 
+    <button class="button" onclick="vibratePattern()">Vibrate in Nap</button>
+    <script>
+        function vibrate(ms){
+            navigator.vibrate(ms)
+        }
+
+         function vibratePattern (){
+             navigator.vibrate([300,100,300,100,300])
+         }
+    </script>
+</body>
+</html>
